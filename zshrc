@@ -59,15 +59,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/arcanist/bi
 
 source $ZSH/oh-my-zsh.sh
 
-# add hg support to oh-my-zsh
-function hg_prompt_info {
-    hg prompt --angle-brackets "\
-<%{$fg_bold[blue]%}hg:(%{$fg_bold[red]%}<branch>><:<tags|, >%{$fg_bold[blue]%})>\
-%{$fg[yellow]%}<status|modified|unknown><update>\
-<patches: <patches|join( → )>>%{$reset_color%}" 2>/dev/null
-}
-
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
